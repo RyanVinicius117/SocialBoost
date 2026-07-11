@@ -163,7 +163,38 @@ Continuar para pagamento
 
 </div>
 
+<script>
 
+const urlParams = new URLSearchParams(window.location.search);
+
+const plano = urlParams.get("plano");
+
+
+function pagamento(){
+
+if(plano === "presenca"){
+
+window.location.href="https://mpago.la/1h41weo";
+
+}
+
+
+if(plano === "crescimento"){
+
+window.location.href="https://mpago.la/1qSk9CQ";
+
+}
+
+
+if(plano === "autoridade"){
+
+alert("Link do plano Autoridade ainda não configurado");
+
+}
+
+}
+
+</script>
 </body>
 
 </html>
