@@ -167,6 +167,31 @@ campoPlano.value = "Plano Crescimento - R$99,90";
 if(plano === "autoridade"){
 campoPlano.value = "Plano Autoridade - R$179,90";
 }
+function enviarWhatsApp(){
+
+const nome = document.querySelector('input[placeholder="Seu nome"]').value;
+
+const whatsapp = document.querySelector('input[placeholder="WhatsApp"]').value;
+
+const instagram = document.querySelector('input[placeholder="Instagram (URL do perfil)"]').value;
+
+const segmento = document.querySelector('select').value;
+
+const mensagem = 
+"Novo pedido SocialBoost 🚀%0A%0A" +
+"Nome: " + nome + "%0A" +
+"WhatsApp: " + whatsapp + "%0A" +
+"Instagram: " + instagram + "%0A" +
+"Segmento: " + segmento + "%0A" +
+"Plano: " + campoPlano.value;
+
+
+window.open(
+"https://wa.me/5515991960669?text=" + mensagem,
+"_blank"
+);
+
+}
 
 function pagamento(){
 
