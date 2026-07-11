@@ -1,76 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SocialBoost</title>
+<title>SocialBoost | Crescimento Digital</title>
 
 <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin:0;
-    font-family:Poppins, Arial;
-    background:#050505;
-    color:white;
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #1E90FF;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
 }
 
 .hero {
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.box {
-    background:rgba(255,255,255,0.08);
-    padding:40px;
-    border-radius:25px;
-    backdrop-filter:blur(10px);
+.hero h1 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: auto;
 }
 
-h1 {
-    font-size:45px;
+.hero h1 span {
+    color: #1E90FF;
 }
 
-span {
-    color:#1E90FF;
+.hero p {
+    margin: 25px auto;
+    max-width: 600px;
+    color: #ccc;
+    font-size: 18px;
 }
 
 button {
-    background:#1E90FF;
-    border:none;
-    padding:15px 35px;
-    border-radius:30px;
-    color:white;
-    font-size:18px;
+    background: #1E90FF;
+    border: none;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
 }
+
+
+section {
+    padding: 60px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: rgba(255,255,255,0.07);
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+}
+
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+.card p {
+    color:#ccc;
+}
+
+
+.price {
+    font-size: 28px;
+    color:#1E90FF;
+    margin:20px;
+}
+
+
+.feature {
+    border: 2px solid #1E90FF;
+}
+
+
+footer {
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
 </style>
 
 </head>
 
+
 <body>
+
+
+<header>
+
+<div class="logo">
+SOCIAL <span>BOOST</span>
+</div>
+
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Serviços</a>
+<a href="#">Planos</a>
+<a href="#">Contato</a>
+</nav>
+
+</header>
+
+
 
 <div class="hero">
 
-<div class="box">
-
 <h1>
-Impulsione seu <span>Instagram</span>
+Transformamos perfis comuns em <span>marcas com autoridade</span>
 </h1>
 
+
 <p>
-Mais alcance, seguidores e engajamento para seu perfil.
+Ajudamos empresas e criadores a fortalecerem sua presença digital, aumentar confiança e crescer no Instagram.
 </p>
 
+
 <button>
-Comprar Agora
+Impulsionar minha marca
+</button>
+
+
+</div>
+
+
+
+
+<section>
+
+<h2 class="title">
+Nossos Serviços
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>📈 Crescimento Digital</h3>
+<p>
+Estratégias para fortalecer sua presença online.
+</p>
+</div>
+
+
+<div class="card">
+<h3>📸 Conteúdo Profissional</h3>
+<p>
+Melhor apresentação da sua marca e produtos.
+</p>
+</div>
+
+
+<div class="card">
+<h3>🚀 Marketing Local</h3>
+<p>
+Soluções para empresas que querem crescer.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section>
+
+<h2 class="title">
+Planos
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>Plano Presença</h3>
+<p>1.000 seguidores</p>
+<div class="price">
+R$29,90
+</div>
+<button>
+Escolher
+</button>
+</div>
+
+
+
+<div class="card feature">
+
+<h3>🔥 Plano Crescimento</h3>
+<p>
+5.000 seguidores
+</p>
+
+<div class="price">
+R$99,90
+</div>
+
+<button>
+Mais vendido
 </button>
 
 </div>
 
+
+
+<div class="card">
+
+<h3>Plano Autoridade</h3>
+
+<p>
+10.000 seguidores
+</p>
+
+<div class="price">
+R$179,90
 </div>
+
+<button>
+Escolher
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 SocialBoost - Crescimento Digital
+
+</footer>
+
 
 </body>
 </html>
