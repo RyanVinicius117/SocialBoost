@@ -150,7 +150,22 @@ Continuar para pagamento
 const urlParams = new URLSearchParams(window.location.search);
 
 const plano = urlParams.get("plano");
+const campoPlano = document.getElementById("planoEscolhido");
 
+
+if(plano === "presenca"){
+campoPlano.value = "Plano Presença - R$29,90";
+}
+
+
+if(plano === "crescimento"){
+campoPlano.value = "Plano Crescimento - R$99,90";
+}
+
+
+if(plano === "autoridade"){
+campoPlano.value = "Plano Autoridade - R$179,90";
+}
 
 function pagamento(){
 
